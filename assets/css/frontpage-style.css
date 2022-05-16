@@ -9,7 +9,7 @@
 :root {
     --background-color: hsla(206, 10%, 14%);
     --subtext-color: hsla(355, 100%, 64%);
-
+    --cordotexto: white;
     font-size: 62.5%; /* 1rem = 10px */
 
 }
@@ -82,72 +82,5 @@ nav {
 
 .button__position {
     align-items: center;
-}
-
-.button {
-
-    display: flex;
-    position:relative;
-    overflow: hidden;
-    width: 30rem;
-    height: 6rem;
-    background-color: var(--background-color)
-}
-
-.button::before {
-
-    content: "";
-  position:absolute;
-  margin:-2rem;
-  width:2.8rem;
-  height:4rem;
-  transform:rotate(45deg);
-  background-color:rgb(255, 255, 255); /* to see where it is */
-
-  box-shadow: 0 0 0 250px var(--background-color);
-}
-
-.button::after {
-
-    content: "";
-  position:absolute;
-  margin:-2rem;
-  width:2.8rem;
-  height:-8rem;
-  transform:rotate(45deg);
-  background-color:rgb(255, 255, 255); /* to see where it is */
-
-  box-shadow: 0 0 0 250px var(--background-color);
-}
-
-
-.bvc { left: -15px }
-.bevel, .content { border-width: 15px }
-.bevel, .content { border-color: #efefef; border-style:solid; }
-
-.bvc {
-    width: 90%; /* width of overall box, variable or fixed */ 
-    margin: 0 auto;
-    position: relative;
-    margin-bottom: 15px;
-}
-
-.bvc .tr, .bvc .tl, .bvc .br, .bvc .bl { height: 0px; width: 100%; }
-.bvc .tr, .bvc .tl { border-top: 0; }
-.bvc .br, .bvc .bl { border-bottom: 0; }
-.bvc .tr, .bvc .br { border-right-color: transparent; }
-.bvc .tl, .bvc .bl { border-left-color: transparent; }
-.no_bevel { height: 0px; width: 100%; border-bottom: 0; }
-
-.content {
-    background: #efefef url(http://placehold.it/2000x200/efefef) no-repeat;
-    width: 100%;
-    border-top: 0;
-    border-bottom: 0;
-}
-
-.principal__carrossel__habilidades--button{
-    background-color: transparent;
-    border: transparent;
 }
 
