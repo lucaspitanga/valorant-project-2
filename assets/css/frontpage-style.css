@@ -12,6 +12,8 @@
     --cordotexto: white;
     font-size: 62.5%; /* 1rem = 10px */
 
+    --nav-height: 9.1rem;
+
 }
 
 html {
@@ -47,7 +49,7 @@ nav {
     display: flex;
 
     width: 100vw;
-    height: 9.6rem;
+    height: var(--nav-height);
     bottom: 0rem;
     transition: 500ms;
     align-items: center;
@@ -70,8 +72,6 @@ nav {
 
 }
 
-
-
 .navigation__button--image {
     background: none;
     border: none;
@@ -82,5 +82,72 @@ nav {
 
 .button__position {
     align-items: center;
+}
+
+/* -- HOME -- */
+
+.principal{
+
+    padding: 2rem;
+    padding-bottom: calc(4rem + var(--nav-height));
+}
+
+/* -- AGENTES -- */
+
+.principal__agentessecundarios {
+    display: flex;
+    position: relative;
+
+    flex-direction: row;
+    gap: 3.2rem;
+
+}
+
+.principal__agentes--conteudo {    
+    padding: 1rem;
+    text-align: center;
+
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: .6rem;
+}
+
+.principal__agentessecundarios--stroke {
+    
+    position: absolute;
+    display: flex;
+    
+    padding-block: 0.5rem;
+    padding-left: 0.5rem;
+
+    margin-inline: auto;
+    z-index: -100;
+
+}
+
+.principal__agentessecundarios--stroke-2 {
+    
+    position: absolute;
+    display: flex;
+    
+    padding-block: 0.5rem;
+    padding-left: 19.5rem;
+
+    margin-inline: auto;
+    z-index: -100;
+
+}
+
+.principal__agentessecundarios--stroke-3 {
+    
+    position: absolute;
+    display: flex;
+    
+    padding-block: 0.5rem;
+    padding-left: 38.5rem;
+
+    margin-inline: auto;
+    z-index: -100;
+
 }
 
