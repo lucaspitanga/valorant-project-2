@@ -7,8 +7,8 @@
 }
 
 :root {
-    --background-color: hsla(206, 10%, 14%);
-    --subtext-color: hsla(355, 100%, 64%);
+    --background-color: hsl(206, 10%, 14%);
+    --subtext-color: hsl(355, 100%, 64%);
     --cordotexto: white;
     font-size: 62.5%; /* 1rem = 10px */
 
@@ -34,8 +34,13 @@ body {
     align-items: center;
     text-align: center;
     overflow: overlay;
+
+    
+    background-color: var(--subtext-color);
+
     
 }
+
 
 img {
     max-width: 100%;
@@ -89,11 +94,51 @@ nav {
 }
 
 /* -- HOME -- */
+.principal::before {
+content: '';
+width: 100%;
+height: calc(50% + var(--nav-height));
+background-image: url(/assets/img/background.png);
+
+-webkit-mask-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+display: block;
+
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+}
 
 .principal{
 
     padding-bottom: calc(4rem + var(--nav-height));
+    
 }
+
+/* -- PESQUISA -- */
+
+.principal__barradepesquisa {
+    border: 1px solid none;
+    
+}
+
+.principal__barradepesquisa li {
+    text-align: left;
+    position: absolute;
+    display: flex;
+    
+    gap: 2rem;
+    font-size: 1.4;
+    font-style: normal;
+    color: white;
+    font-weight: 400;
+    padding-block: 2.5rem;
+    padding-left: 8rem;
+    cursor: pointer;
+    
+}
+
+
 
 /* -- AGENTES -- */
 
