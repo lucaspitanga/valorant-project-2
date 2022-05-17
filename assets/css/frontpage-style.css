@@ -37,6 +37,10 @@ body {
     
 }
 
+img {
+    max-width: 100%;
+}
+
 .wrapper {
     width: 65.2rem;
     margin-inline: auto;
@@ -88,19 +92,27 @@ nav {
 
 .principal{
 
-    padding: 2rem;
     padding-bottom: calc(4rem + var(--nav-height));
 }
 
 /* -- AGENTES -- */
 
+
 .principal__agentessecundarios {
+
+    padding-block: 4rem;
+    margin-inline: auto;
+
+    gap: 2rem;
     display: flex;
     position: relative;
-
     flex-direction: row;
-    gap: 3.2rem;
+    justify-content: center;
 
+}
+
+.principal__agentessecundarios p{
+    padding-top: 2rem;
 }
 
 .principal__agentes--conteudo {    
@@ -112,42 +124,4 @@ nav {
     border-radius: .6rem;
 }
 
-.principal__agentessecundarios--stroke {
-    
-    position: absolute;
-    display: flex;
-    
-    padding-block: 0.5rem;
-    padding-left: 0.5rem;
-
-    margin-inline: auto;
-    z-index: -100;
-
-}
-
-.principal__agentessecundarios--stroke-2 {
-    
-    position: absolute;
-    display: flex;
-    
-    padding-block: 0.5rem;
-    padding-left: 19.5rem;
-
-    margin-inline: auto;
-    z-index: -100;
-
-}
-
-.principal__agentessecundarios--stroke-3 {
-    
-    position: absolute;
-    display: flex;
-    
-    padding-block: 0.5rem;
-    padding-left: 38.5rem;
-
-    margin-inline: auto;
-    z-index: -100;
-
-}
 
